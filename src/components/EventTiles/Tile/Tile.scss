@@ -1,0 +1,42 @@
+/* Tile.scss */
+
+.transparent-card {
+  background-color: transparent;
+  box-shadow: none;
+  position: relative;
+  img{
+    filter: brightness(70%);
+  }
+  .MuiCardContent-root {
+    background-color: transparent;
+    opacity:1;
+    transition: opacity 0.2s ease-in-out, transform 0.1s ease-in-out; /* Added transform transition */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+  }
+
+  .MuiCardActionArea-root {
+    background-color: transparent;
+  }
+
+  &:hover .MuiCardContent-root {
+    // transform: translateY(200px); /* Adjust translateY value as per your animation needs */
+    opacity: 50%;
+  }
+}
+// EventTiles.scss
+.lazyload {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.lazyloaded {
+  opacity: 1;
+}
+// .cardMedia{
+//   img{
+//     display: none;
+//   }
+// }
