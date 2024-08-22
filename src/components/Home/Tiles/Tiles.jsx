@@ -7,6 +7,13 @@ import { useNavigate } from "react-router-dom";
 import independenceDay from "../../../assets/DrawerImages/independenceDay.jpg";
 import { useEffect, useRef } from "react";
 import orientation from "../../../assets/Home-tiles/orientation.jpg";
+import bag from "../../../assets/Home-tiles/bags.png"
+import bed from "../../../assets/Home-tiles/beds.png"
+import sheild from "../../../assets/Home-tiles/sheild.png"
+import books from "../../../assets/Home-tiles/books.png"
+import food from "../../../assets/Home-tiles/food.png"
+import hat from "../../../assets/Home-tiles/hats.png"
+import store from "../../../assets/Home-tiles/store.png"
 import Tarang from "../../../assets/Home-tiles/Tarang.jpg";
 import saazNight25 from "../../../assets/Home-tiles/saazNight25.jpg";
 import Saanjh24 from "../../../assets/Home-tiles/Saanjh24.jpg";
@@ -81,18 +88,20 @@ function Tiles() {
         <div
           className="two"
           onClick={() => handleClick("two")}
-          style={{ "background-color": "#1E969F" }}
+          style={{ backgroundImage: `url(${bag})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center", }}
         >
           
-          <div className="eventName" style={{ background: "transparent" }}>
-            Independence Day
+          <div className="eventName" style={{ background: "transparent"}}>
+            TEXT1
           </div>
          
           {clickedTiles["two"] && (
             <TilePopup
               eventName={"Independence Day"}
               eventGallary={"Independence Day"}
-              image={independenceDay}
+              image={bag}
               date={"15 August 2024"}
               color="black"
               handleClick={() => handleClick("two")}
@@ -104,14 +113,14 @@ function Tiles() {
           className="three"
           onClick={() => handleClick("three")}
           style={{
-            backgroundImage: `url(${orientation})`,
+            backgroundImage: `url(${sheild})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
          
           <div className="eventName" style={{ background: "transparent" }}>
-            Orientation '24
+            TEXt2
           </div>
          
           {clickedTiles["three"] && (
@@ -130,7 +139,7 @@ function Tiles() {
           className="four"
           onClick={() => handleClick("four")}
           style={{
-            backgroundImage: `url(${saazNight25})`,
+            backgroundImage: `url(${bed})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -146,7 +155,7 @@ function Tiles() {
               handleClick={() => handleClick("four")}
               eventName={"Saaz Night '25"}
               eventGallary={"Saaz Night '24"}
-              image={saazNight25}
+              image={bed}
               date={"To Be Announced"}
               buttonId="four"
             />
@@ -156,7 +165,7 @@ function Tiles() {
           className="five"
           onClick={() => handleClick("five")}
           style={{
-            backgroundImage: `url(${Merch1})`,
+            backgroundImage: `url(${books})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -183,7 +192,7 @@ function Tiles() {
           className="six"
           onClick={() => handleClick("six")}
           style={{
-            backgroundImage: `url(${NoticeBoard})`,
+            backgroundImage: `url(${food})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -202,7 +211,7 @@ function Tiles() {
           className="eight"
           onClick={() => handleClick("eight")}
           style={{
-            backgroundImage: `url(${Tarang})`,
+            backgroundImage: `url(${hat})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -235,10 +244,26 @@ function Tiles() {
         <div
           className="nine"
           onClick={() => handleClick("nine")}
+         
+        >
+        
+          {clickedTiles["nine"] && (
+            <TilePopup
+              color="black"
+              handleClick={() => handleClick("nine")}
+              eventName={"Saanjh '24"}
+              eventGallary={"Saanjh 22"}
+              image={Saanjh24}
+              date={"21 August 2024"}
+              buttonId="nine"
+            />
+          )}
+        </div>
+        <div
+          className="nine"
+          onClick={() => handleClick("nine")}
           style={{
-            backgroundImage: `url(${Saanjh24})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
+           
           }}
         >
         
@@ -258,29 +283,7 @@ function Tiles() {
           className="nine"
           onClick={() => handleClick("nine")}
           style={{
-            backgroundImage: `url(${Saanjh24})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-        
-          {clickedTiles["nine"] && (
-            <TilePopup
-              color="black"
-              handleClick={() => handleClick("nine")}
-              eventName={"Saanjh '24"}
-              eventGallary={"Saanjh 22"}
-              image={Saanjh24}
-              date={"21 August 2024"}
-              buttonId="nine"
-            />
-          )}
-        </div>
-        <div
-          className="nine"
-          onClick={() => handleClick("nine")}
-          style={{
-            backgroundImage: `url(${Saanjh24})`,
+            
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
