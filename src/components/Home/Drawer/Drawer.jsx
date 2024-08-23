@@ -182,11 +182,11 @@ const TilePopup = ({ eventName,image,date,handleClick,eventGallary,buttonId,clic
                 <div className="date">{date}</div>
                 </div>
                 <div className="register">
-                  Register
+                  Lorem IPSUM
                 </div>
               </div>
             </Tile>
-            <Tile area="tile2" style={{ backgroundImage: `url(${Mic})`, backgroundSize: 'cover', backgroundPosition: 'right' }}>
+            <Tile area="tile2" >
               <Arrow src={arrow} alt="Arrow" className="arrow" />
               {/* <Typography variant="h6"
                 fontFamily={"Anton"}
@@ -194,8 +194,8 @@ const TilePopup = ({ eventName,image,date,handleClick,eventGallary,buttonId,clic
                 fontSize={"30px"}
                 style={{ position:'relative',zIndex:'100'}}>Audition Registration</Typography> */}
                 <div className="tile2-audition-tile">
-                  <div className="audition"> Audition Registration</div>
-                  <div className="audition-subtext">Show Us What You Got And Get To Perform On Stage.</div>
+                  <div className="audition"> Lorem IPSUM</div>
+                  <div className="audition-subtext">Lorem IPSUM Lorem IPSUM Lorem IPSUM</div>
                 </div>
                {/* <Typography
                 variant="h1"
@@ -218,8 +218,8 @@ const TilePopup = ({ eventName,image,date,handleClick,eventGallary,buttonId,clic
                 style={{top:'10px', left:'10px', position:'absolute'}}
                 
               >
-                Event <br />
-                Gallery
+                Lorem <br />
+                Lorem IPSUM
               </Typography>
               <Typography
                 variant="h1"
@@ -230,7 +230,7 @@ const TilePopup = ({ eventName,image,date,handleClick,eventGallary,buttonId,clic
                 style={{bottom:'10px', left:'10px', position:'absolute',fontWeight:'light'}}
                 className="invisible-on-phone"
               >
-                Explore The Photos <br/>And Videos Of The <br/>Event
+                Lorem IPSUM Lorem IPSUM Lorem IPSUM Lorem IPSUM <br/>Lorem IPSUM Lorem IPSUM <br/>Lorem IPSUM
               </Typography>
             </Tile>
             <Tile area="tile4" style={{ background: "#1E969F" }}>
@@ -251,7 +251,7 @@ const TilePopup = ({ eventName,image,date,handleClick,eventGallary,buttonId,clic
                 style={{bottom:'10px', left:'10px', position:'absolute',fontWeight:'light'}}
                 className="invisible-on-phone"
               >
-                Having Some <br/> Questions <br/> Specific <br/> To Event ?
+                Lorem IPSUM <br/> Lorem IPSUM <br/> Lorem IPSUM <br/> To Lorem IPSUM ?
               </Typography>
             </Tile>
           </TileContainer>

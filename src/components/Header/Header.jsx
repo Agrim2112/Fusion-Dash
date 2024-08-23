@@ -32,7 +32,7 @@ const Header = () => {
         }
     }
     const darkButton = { background: "black", color: "white" };
-    const whiteButton = { background: mobileMenuOpen ? '#1E969F':'white', color: mobileMenuOpen ? 'white':'black' };
+    const whiteButton = { background: mobileMenuOpen ? 'white':'white', color: mobileMenuOpen ? 'white':'black' };
     const location = useLocation();
     useEffect(()=>{
       if(location.pathname==="/") setSelectedButton(1);

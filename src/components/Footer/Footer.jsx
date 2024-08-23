@@ -29,25 +29,25 @@ const Footer = () => {
           </div>
           <div className="c-item">
             <FaMobileAlt />
-            <div className="text">Phone: 6260595371</div>
+            <div className="text">Phone: XXXXXXXXXXX</div>
           </div>
           <div className="c-item">
             <FaEnvelope />
-            <div className="text">Email: saaz@iiitdmj.ac.in</div>
+            <div className="text">Email: XXXXXXX@iiitdmj.ac.in</div>
           </div>
       </div>
       <div className="col">
         <div className="social-icons">
-                    <a className="icon" href="https://www.youtube.com/@saaziiitdmj8882" target="_blank" rel="noopener noreferrer">
+                    <a className="icon" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
                         <FaYoutube size={14} />
                     </a>
-                    <a className="icon" href="https://www.facebook.com/saazIIITDMJ" target="_blank" rel="noopener noreferrer">
+                    <a className="icon" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                         <FaFacebookF size={14} />
                     </a>
                     {/* <a className="icon" target="_blank" rel="noopener noreferrer">
                         <FaTwitter size={14} />
                     </a> */}
-                    <a className="icon" href="https://www.instagram.com/saaz_iiitdmj/" target="_blank" rel="noopener noreferrer">
+                    <a className="icon" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
                         <FaInstagram size={14} />
                     </a>
                 </div>

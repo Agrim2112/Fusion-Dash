@@ -13,6 +13,8 @@ import sheild from "../../../assets/Home-tiles/sheild.png"
 import books from "../../../assets/Home-tiles/books.png"
 import food from "../../../assets/Home-tiles/food.png"
 import hat from "../../../assets/Home-tiles/hats.png"
+import list from "../../../assets/Home-tiles/list.png"
+import girl from "../../../assets/Home-tiles/girl.png"
 import store from "../../../assets/Home-tiles/store.png"
 import Tarang from "../../../assets/Home-tiles/Tarang.jpg";
 import saazNight25 from "../../../assets/Home-tiles/saazNight25.jpg";
@@ -77,12 +79,29 @@ function Tiles() {
           Dashboard <span><img src={Vector} style={{width:"6px"}} alt="" /></span>
         </div>
       <div className="Tiles" ref={scrollableContainerRef}>
-        <div className="one" onClick={() => navigate("/Events")}>
-          {/* <div className="title">EVENTS</div>
-          <div className="more">more</div>
-          <div className="arrow">
-            <img src={arrow} alt="arrowIcon" />
-          </div> */}
+      <div
+          className="one"
+          onClick={() => handleClick("one")}
+          style={{ backgroundImage: `url(${girl})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center", }}
+        >
+          
+          <div className="eventName" style={{ background: "transparent"}}>
+            Administration
+          </div>
+         
+          {clickedTiles["two"] && (
+            <TilePopup
+              eventName={"Administration"}
+              eventGallary={"Independence Day"}f
+              image={girl}
+              date={"15 August 2024"}
+              color="black"
+              handleClick={() => handleClick("two")}
+              buttonId="two"
+            />
+          )}
         </div>
 
         <div
@@ -94,13 +113,13 @@ function Tiles() {
         >
           
           <div className="eventName" style={{ background: "transparent"}}>
-            TEXT1
+            Placement Cell
           </div>
          
           {clickedTiles["two"] && (
             <TilePopup
-              eventName={"Independence Day"}
-              eventGallary={"Independence Day"}
+              eventName={"Placement Cell"}
+              eventGallary={"Independence Day"}f
               image={bag}
               date={"15 August 2024"}
               color="black"
@@ -120,7 +139,7 @@ function Tiles() {
         >
          
           <div className="eventName" style={{ background: "transparent" }}>
-            TEXt2
+            Health Care
           </div>
          
           {clickedTiles["three"] && (
@@ -128,7 +147,7 @@ function Tiles() {
               color="black"
               handleClick={() => handleClick("three")}
               eventName={"Orientation '24"}
-              image={orientation}
+              image={sheild}
               date={"21 August 2024"}
               eventGallary={"Orientation '23"}
               buttonId="three"
@@ -146,14 +165,14 @@ function Tiles() {
         >
           
           <div className="eventName" style={{ background: "transparent" }}>
-            Saaz Night'25
+            Hostel
           </div>
         
           {clickedTiles["four"] && (
             <TilePopup
               color="black"
               handleClick={() => handleClick("four")}
-              eventName={"Saaz Night '25"}
+              eventName={"Hostel"}
               eventGallary={"Saaz Night '24"}
               image={bed}
               date={"To Be Announced"}
@@ -179,11 +198,9 @@ function Tiles() {
             className="eventName"
             style={{ background: "transparent", width: "100px" }}
           >
-           
+           Curriculum
           </div>
-          <div className="more1-square" style={{ background: "transparent" }}>
-            Shop
-          </div>
+         
           {clickedTiles["five"] && (
             <TilePopup color="black" handleClick={() => handleClick("five")} buttonId="five" />
           )}
@@ -200,7 +217,7 @@ function Tiles() {
           <div className="date" style={{ background: "transparent" }}>
           </div>
           <div className="eventName" style={{ background: "transparent" }}>
-            Cookin Somethin...
+            Mess
           </div>
           {clickedTiles["six"] && (
             <TilePopup color="black" handleClick={() => handleClick("six")} image={NoticeBoard}  buttonId="six" eventName={"Cooking Somethin...."}/>
@@ -225,15 +242,15 @@ function Tiles() {
               {/* Announced */}
             </div>
           </div>
-          {/* <div className="eventName" style={{ background: "transparent" }}>
-            Tarang '24
-          </div> */}
+          <div className="eventName" style={{ background: "transparent" }}>
+            Academic
+          </div>
           
           {clickedTiles["eight"] && (
             <TilePopup
               color="black"
               handleClick={() => handleClick("eight")}
-              eventName={"Tarang '24"}
+              eventName={"Academic"}
               eventGallary={"Tarang '23"}
               image={Tarang}
               date={"21 August 2024"}
@@ -244,26 +261,10 @@ function Tiles() {
         <div
           className="nine"
           onClick={() => handleClick("nine")}
-         
-        >
-        
-          {clickedTiles["nine"] && (
-            <TilePopup
-              color="black"
-              handleClick={() => handleClick("nine")}
-              eventName={"Saanjh '24"}
-              eventGallary={"Saanjh 22"}
-              image={Saanjh24}
-              date={"21 August 2024"}
-              buttonId="nine"
-            />
-          )}
-        </div>
-        <div
-          className="nine"
-          onClick={() => handleClick("nine")}
           style={{
-           
+            backgroundImage: `url(${store})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
           }}
         >
         
@@ -271,7 +272,7 @@ function Tiles() {
             <TilePopup
               color="black"
               handleClick={() => handleClick("nine")}
-              eventName={"Saanjh '24"}
+              eventName={""}
               eventGallary={"Saanjh 22"}
               image={Saanjh24}
               date={"21 August 2024"}
@@ -283,7 +284,29 @@ function Tiles() {
           className="nine"
           onClick={() => handleClick("nine")}
           style={{
-            
+            backgroundImage: `url(${bed})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+        
+          {clickedTiles["nine"] && (
+            <TilePopup
+              color="black"
+              handleClick={() => handleClick("nine")}
+              eventName={"Custom"}
+              eventGallary={"Saanjh 22"}
+              image={Saanjh24}
+              date={"21 August 2024"}
+              buttonId="nine"
+            />
+          )}
+        </div>
+        <div
+          className="nine"
+          onClick={() => handleClick("nine")}
+          style={{
+            backgroundImage: `url(${list})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -295,7 +318,7 @@ function Tiles() {
               handleClick={() => handleClick("nine")}
               eventName={"Saanjh '24"}
               eventGallary={"Saanjh 22"}
-              image={Saanjh24}
+              image={list}
               date={"21 August 2024"}
               buttonId="nine"
             />
